@@ -7,37 +7,231 @@
   box-sizing: border-box;
 }
 
-a {
-  text-decoration: none;
+ul li {
+  list-style: none;
 }
 
-button {
+a {
+  text-decoration: none;
+  color: #EAEBEB;
+}
+
+fieldset {
   border: none;
 }
 
-/* COLORS: #2D3142 #4F5D75   #FFFFFF #EF8354 #EAEBEB */
+/* button {
+  border: none;
+} */
+
+/* COLORS:        */
 /* POLICE: font-family: 'Righteous', cursive; && font-family: 'Lato', sans-serif; */
 
-/* :root {} */
+:root {
+  --noir: #000000;
+  --gris_foncer: #2D3142;
+  --gris: #4F5D75;
+  --gris_clair: #bfbfbf;
+  --blanc: #FFFFFF;
+  --blanc_2: #EAEBEB;
+  --orange: #EF8354;
+}
 
 body {
   font-family: 'Lato', sans-serif;
 }
 
 /* HEADER NAV BAR */
+header {
+  font-family: 'Righteous';
+  background-color: var(--gris);
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
+h1 {
+  margin: 0 auto;
+  color: var(--blanc_2);
+  font-size: 15px;
+}
+
+h1::before,
+h1::after {
+  content: '"';
+  color: var(--orange);
+  margin: 2px;
+}
+
+nav {
+  margin: 0 20% 0 auto;
+}
+
+ul {
+  text-align: center;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+li {
+  margin: 5px 0;
+}
+
+.liens_nav {
+  padding: 3px 10%;
+}
+
+.liens_nav:hover {
+  background-color: var(--orange);
+  border-radius: 5px;
+}
+
+.dark_button {
+  margin: 0 5% 0 0;
+  color: var(--blanc);
+  background-color: var(--gris_foncer);
+  border-color: var(--gris_clair);
+  border-radius: 10px;
+  padding: 12px;
+}
 
 /* TABLEAU */
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 
+table {
+  border: solid 1px;
+  padding: 2.5px;
+}
+
+td {
+  margin: 2px 10px;
+  border: solid 1px #000000;
+}
+
+thead {
+  color: var(--blanc_2);
+  background-color: var(--gris);
+  border: solid 1px #000000;
+  padding: 1px;
+}
+
+
+tbody {
+  color: var(--noir);
+  background-color: var(--blanc_2);
+  border: solid 1px #000000;
+  padding: 1px;
+}
+
+tfoot {
+  color: var(--blanc_2);
+  background-color: var(--gris);
+  border: solid 1px #000000;
+  padding: 1px;
+}
 
 /* LES PLATS DE LA CARTE */
+h2 {
+  margin: 25px 0;
+  text-align: center;
+}
 
+.article_plats {
+  margin: 10px 5%;
+  height: 120px;
+  width: 90%;
+  background-color: var(--blanc_2);
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.gris_clair {
+  background-color: var(--gris_clair);
+}
+
+.img_plats {
+  height: 100%;
+  width: 10em;
+  border-radius: 4px;
+  float: left;
+}
+
+.titre_plats {
+  margin: 5px;
+}
+
+.description_plats {
+  height: 100%;
+  text-align: center;
+  font-size: 15px;
+}
+
+/* SEPARATEUR */
+.separateur {
+  margin: 30px 0;
+  background-image: url(img/img-12.jpg);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  overflow: hidden;
+  border-radius: 6px;
+  width: 90vw;
+  height: 13em;
+}
 
 /* BLOG */
+.section_blog {
+  width: 80%;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
 
+.article_blog {
+  margin: 10px 0;
+  box-shadow: 0px 5px 35px 10px #BFC0C0;
+  text-align: center;
+  width: 100%;
+}
+
+.img_blog {
+  width: 100%;
+  height: 100%;
+}
 
 /* FOOTER */
+footer {
+  margin-top: 25px;
+  background-color: var(--gris);
+  color: var(--blanc_2);
+  padding: 20px 4%;
+  text-align: center;
+}
 
+.link_eden_school {
+  color: var(--orange);
+}
+
+.info {
+  margin: 25px 0;
+}
+
+.champs_age {
+  border: solid #BFC0C0 0.8px;
+  padding: 5px;
+}
+
+legend {
+  text-align: start;
+}
 
 /* MEDIA */
 /* @media screen and (min-width: 680px) {} */

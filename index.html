@@ -1,15 +1,157 @@
 <!DOCTYPE html>
 <html lang="fr">
-  <head>
-    <link rel="stylesheet" href="style.css">
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>"Bon_app"</title>
-  </head>
-  <body>
-    
-    
-    
-    <script type="module" src="/main.js"></script>
-  </body>
+
+<head>
+  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>"Bon_app"</title>
+</head>
+
+<body>
+
+  <!-- HEADER NAV BAR -->
+  <header>
+    <h1>BON APP</h1>
+    <nav>
+      <ul>
+        <li><a class="liens_nav" href="#plats">PLATS</a></li>
+        <li><a class="liens_nav" href="#blog">BLOG</a></li>
+        <li><a class="liens_nav" href="#contact">CONTACT</a></li>
+      </ul>
+    </nav>
+    <button class="dark_button">DARK</button>
+  </header>
+
+  <!-- TABLEAU -->
+  <main>
+    <h2>NOS ABONNEMENTS</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>bronze</th>
+          <th>silver</th>
+          <th>gold</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1 repas par semaine</td>
+          <td>3 repas par semaine</td>
+          <td>5 repas par semaine</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td>29 euros/mois</td>
+          <td>79 euros/mois</td>
+          <td>149 euros/mois</td>
+        </tr>
+      </tfoot>
+    </table>
+
+    <h2>LES PLATS A LA CARTE</h2>
+
+    <section>
+      <article class="article_plats gris_clair">
+        <img class="img_plats" src="img/img-01.jpg" alt="">
+        <h3 class="titre_plats">UN SUPER TITRE</h3>
+        <p class="description_plats">Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus expedita labore
+          explicabo quisquam porro,
+          quae eum! Deserunt consequatur libero itaque vero beatae, doloribus doloremque laborum molestias sit. Aut,
+          ratione earum.</p>
+      </article>
+
+      <article class="article_plats">
+        <img class="img_plats" src="img/img-02.jpg" alt="">
+        <h3 class="titre_plats">UN SUPER TITRE</h3>
+        <p class="description_plats">Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus expedita labore
+          explicabo quisquam porro,
+          quae eum! Deserunt consequatur libero itaque vero beatae, doloribus doloremque laborum molestias sit. Aut,
+          ratione earum.</p>
+      </article>
+    </section>
+
+    <!-- SEPARATEUR -->
+    <hr class="separateur">
+
+    <!-- BLOG -->
+    <h2>BLOG</h2>
+    <section class="section_blog">
+      <article class="article_blog">
+        <img class="img_blog" src="img/pic01.jpg" alt="">
+        <h3>UN SUPER TITRE</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio odit, recusandae cum voluptatem
+          temporibus quae, perferendis beatae hic perspiciatis nulla adipisci laboriosam rerum necessitatibus, ipsa
+          itaque officia libero praesentium dolor.</p>
+      </article>
+
+      <article class="article_blog">
+        <img class="img_blog" src="img/pic02.jpg" alt="">
+        <h3>UN SUPER TITRE</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio odit, recusandae cum voluptatem
+          temporibus quae, perferendis beatae hic perspiciatis nulla adipisci laboriosam rerum necessitatibus, ipsa
+          itaque officia libero praesentium dolor.</p>
+      </article>
+
+      <article class="article_blog">
+        <img class="img_blog" src="img/pic03.jpg" alt="">
+        <h3>UN SUPER TITRE</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio odit, recusandae cum voluptatem
+          temporibus quae, perferendis beatae hic perspiciatis nulla adipisci laboriosam rerum necessitatibus, ipsa
+          itaque officia libero praesentium dolor.</p>
+      </article>
+
+      <article class="article_blog">
+        <img class="img_blog" src="img/pic04.jpg" alt="">
+        <h3>UN SUPER TITRE</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio odit, recusandae cum voluptatem
+          temporibus quae, perferendis beatae hic perspiciatis nulla adipisci laboriosam rerum necessitatibus, ipsa
+          itaque officia libero praesentium dolor.</p>
+      </article>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <h2>FORMULAIRE DE CONTACT</h2>
+    <p>Pour plus de details vous pouvez consulter noter site <a class="link_eden_school"
+        href="https://www.edenschool.fr/">ici</a></p>
+    <form action="">
+      <fieldset>
+        <h3 class="info">INFORMATIONS DE CONTACT</h3>
+        <fieldset class="champs_age">
+          <legend>Quel est votre age</legend>
+          <input type="radio" name="drone" id="12-14"><label for="12-14">12-14</label>
+          <input type="radio" name="drone" id="15-17"><label for="15-17">15-17</label>
+          <input type="radio" name="drone" id="18-19"><label for="18-19">18-19</label>
+        </fieldset>
+      </fieldset>
+
+      <label for="nom">nom :<input class="input" type="name" id="nom"
+          placeholder="Saisissez votre nom"></label>
+
+      <label for="email">mail :<input class="input" type="email" id="email"
+          placeholder="Saisissez votre mail"></label>
+
+      <h3 class="titre_footer">VOTRE JEU PREFERE</h3>
+      <label for="console">Choisissez une console :
+        <select class="input" name="" id="console">
+          <option>--Choisissez une console--</option>
+          <option>switch</option>
+        </select>
+      </label>
+
+      <label for="jeu">Choisissez un jeu :
+        <select class="input" name="" id="jeu">
+          <option>--Choisissez un jeu--</option>
+          <option>Mincraft</option>
+        </select>
+      </label>
+    </form>
+  </footer>
+
+  <script type="module" src="/main.js"></script>
+</body>
+
 </html>
