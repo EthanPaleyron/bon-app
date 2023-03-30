@@ -81,6 +81,8 @@ li {
 
 .liens_nav {
   padding: 3px 10%;
+  cursor: pointer;
+  margin: 0 20px;
 }
 
 .liens_nav:hover {
@@ -94,7 +96,7 @@ li {
   background-color: var(--gris_foncer);
   border-color: var(--gris_clair);
   border-radius: 10px;
-  padding: 12px;
+  padding: 7px;
 }
 
 /* TABLEAU */
@@ -107,40 +109,46 @@ main {
 
 table {
   border: solid 1px;
-  padding: 2.5px;
 }
 
-td {
+th, td {
   margin: 2px 10px;
-  border: solid 1px #000000;
+  border: solid 1px;
+  border-color: var(--noir);
+  padding: 5px;
 }
 
 thead {
   color: var(--blanc_2);
   background-color: var(--gris);
-  border: solid 1px #000000;
-  padding: 1px;
+  border: solid 1px;
+  border-color: var(--noir);
 }
 
 
 tbody {
   color: var(--noir);
   background-color: var(--blanc_2);
-  border: solid 1px #000000;
-  padding: 1px;
+  border: solid 1px;
+  border-color: var(--noir);
 }
 
 tfoot {
   color: var(--blanc_2);
   background-color: var(--gris);
-  border: solid 1px #000000;
-  padding: 1px;
+  border: solid 1px;
+  border-color: var(--noir);
 }
 
 /* LES PLATS DE LA CARTE */
 h2 {
   margin: 25px 0;
   text-align: center;
+}
+
+.section_plats {
+  height: 600px;
+  overflow: scroll;
 }
 
 .article_plats {
@@ -183,7 +191,7 @@ h2 {
   background-size: cover;
   overflow: hidden;
   border-radius: 6px;
-  width: 90vw;
+  width: 90%;
   height: 13em;
 }
 
@@ -196,8 +204,8 @@ h2 {
 }
 
 .article_blog {
-  margin: 10px 0;
-  box-shadow: 0px 5px 35px 10px #BFC0C0;
+  margin: 10px;
+  box-shadow: 0px 5px 35px 10px var(--gris_clair);
   text-align: center;
   width: 100%;
 }
@@ -220,18 +228,85 @@ footer {
   color: var(--orange);
 }
 
-.info {
-  margin: 25px 0;
+h3 {
+  margin: 50px 0 0;
 }
 
 .champs_age {
-  border: solid #BFC0C0 0.8px;
+  display: inline-block;
+  width: 250px;
+  border: solid 0.8px;
+  border-color: var(--gris_clair);
   padding: 5px;
+}
+
+.radio {
+  display: inline-block;
+  margin: 0 10px;
 }
 
 legend {
   text-align: start;
 }
 
+input, select {
+  border-radius: 5px;
+}
+
+.position_input {
+  margin: 15px 0;
+}
+
+textarea {
+  margin: 20px 0;
+  border-radius: 5px;
+}
+
+.submit {
+  margin: 15px 0;
+  color: var(--blanc_2);
+  background-color: var(--gris_foncer);
+  padding: 5px;
+}
+
+.submit:hover, .dark_button:hover {
+  background-color: var(--orange);
+}
+
 /* MEDIA */
-/* @media screen and (min-width: 680px) {} */
+@media screen and (min-width: 680px) {
+  h1 {
+    font-size: 50px;
+  }
+
+  .dark_button {
+    padding: 13px;
+  }
+
+  ul {
+    flex-direction: row;
+  }
+
+  .section_blog {
+    grid-template: "a a";
+    grid-gap: 0 20%;
+  }
+
+  .champs_age {
+    width: 500px;
+  }
+  
+  .radio {
+    margin: 0 51px;
+  }
+
+  input, select {
+    border-radius: 8px;
+    height: 30px;
+  }
+
+  .submit {
+    height: 40px;
+    width: 170px;
+  }
+}

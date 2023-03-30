@@ -50,9 +50,10 @@
       </tfoot>
     </table>
 
-    <h2>LES PLATS A LA CARTE</h2>
+    <!-- PLATS -->
+    <h2 id="plats">LES PLATS A LA CARTE</h2>
 
-    <section>
+    <section class="section_plats">
       <article class="article_plats gris_clair">
         <img class="img_plats" src="img/img-01.jpg" alt="">
         <h3 class="titre_plats">UN SUPER TITRE</h3>
@@ -70,13 +71,85 @@
           quae eum! Deserunt consequatur libero itaque vero beatae, doloribus doloremque laborum molestias sit. Aut,
           ratione earum.</p>
       </article>
+      
+      <article class="article_plats gris_clair">
+        <img class="img_plats" src="img/img-03.jpg" alt="">
+        <h3 class="titre_plats">UN SUPER TITRE</h3>
+        <p class="description_plats">Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus expedita labore
+          explicabo quisquam porro,
+          quae eum! Deserunt consequatur libero itaque vero beatae, doloribus doloremque laborum molestias sit. Aut,
+          ratione earum.</p>
+      </article>
+
+      <article class="article_plats">
+        <img class="img_plats" src="img/img-04.jpg" alt="">
+        <h3 class="titre_plats">UN SUPER TITRE</h3>
+        <p class="description_plats">Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus expedita labore
+          explicabo quisquam porro,
+          quae eum! Deserunt consequatur libero itaque vero beatae, doloribus doloremque laborum molestias sit. Aut,
+          ratione earum.</p>
+      </article>
+
+      <article class="article_plats gris_clair">
+        <img class="img_plats" src="img/img-05.jpg" alt="">
+        <h3 class="titre_plats">UN SUPER TITRE</h3>
+        <p class="description_plats">Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus expedita labore
+          explicabo quisquam porro,
+          quae eum! Deserunt consequatur libero itaque vero beatae, doloribus doloremque laborum molestias sit. Aut,
+          ratione earum.</p>
+      </article>
+
+      <article class="article_plats">
+        <img class="img_plats" src="img/img-06.jpg" alt="">
+        <h3 class="titre_plats">UN SUPER TITRE</h3>
+        <p class="description_plats">Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus expedita labore
+          explicabo quisquam porro,
+          quae eum! Deserunt consequatur libero itaque vero beatae, doloribus doloremque laborum molestias sit. Aut,
+          ratione earum.</p>
+      </article>
+
+      <article class="article_plats gris_clair">
+        <img class="img_plats" src="img/img-07.jpg" alt="">
+        <h3 class="titre_plats">UN SUPER TITRE</h3>
+        <p class="description_plats">Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus expedita labore
+          explicabo quisquam porro,
+          quae eum! Deserunt consequatur libero itaque vero beatae, doloribus doloremque laborum molestias sit. Aut,
+          ratione earum.</p>
+      </article>
+
+      <article class="article_plats">
+        <img class="img_plats" src="img/img-08.jpg" alt="">
+        <h3 class="titre_plats">UN SUPER TITRE</h3>
+        <p class="description_plats">Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus expedita labore
+          explicabo quisquam porro,
+          quae eum! Deserunt consequatur libero itaque vero beatae, doloribus doloremque laborum molestias sit. Aut,
+          ratione earum.</p>
+      </article>
+
+      <article class="article_plats gris_clair">
+        <img class="img_plats" src="img/img-09.jpg" alt="">
+        <h3 class="titre_plats">UN SUPER TITRE</h3>
+        <p class="description_plats">Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus expedita labore
+          explicabo quisquam porro,
+          quae eum! Deserunt consequatur libero itaque vero beatae, doloribus doloremque laborum molestias sit. Aut,
+          ratione earum.</p>
+      </article>
+
+      <article class="article_plats">
+        <img class="img_plats" src="img/img-10.jpg" alt="">
+        <h3 class="titre_plats">UN SUPER TITRE</h3>
+        <p class="description_plats">Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus expedita labore
+          explicabo quisquam porro,
+          quae eum! Deserunt consequatur libero itaque vero beatae, doloribus doloremque laborum molestias sit. Aut,
+          ratione earum.</p>
+      </article>
     </section>
 
     <!-- SEPARATEUR -->
     <hr class="separateur">
 
     <!-- BLOG -->
-    <h2>BLOG</h2>
+    <h2 id="blog">BLOG</h2>
     <section class="section_blog">
       <article class="article_blog">
         <img class="img_blog" src="img/pic01.jpg" alt="">
@@ -114,40 +187,63 @@
 
   <!-- FOOTER -->
   <footer>
-    <h2>FORMULAIRE DE CONTACT</h2>
+    <h2 id="contact">FORMULAIRE DE CONTACT</h2>
     <p>Pour plus de details vous pouvez consulter noter site <a class="link_eden_school"
         href="https://www.edenschool.fr/">ici</a></p>
     <form action="">
       <fieldset>
-        <h3 class="info">INFORMATIONS DE CONTACT</h3>
+        <h3>INFORMATIONS DE CONTACT</h3>
         <fieldset class="champs_age">
           <legend>Quel est votre age</legend>
-          <input type="radio" name="drone" id="12-14"><label for="12-14">12-14</label>
-          <input type="radio" name="drone" id="15-17"><label for="15-17">15-17</label>
-          <input type="radio" name="drone" id="18-19"><label for="18-19">18-19</label>
+          <div class="radio"><input type="radio" name="drone" id="12-14" required><label for="12-14">12-14</label></div>
+          <div class="radio"><input type="radio" name="drone" id="15-17" required><label for="15-17">15-17</label></div>
+          <div class="radio"><input type="radio" name="drone" id="18-19" required><label for="18-19">18-19</label></div>
         </fieldset>
       </fieldset>
 
-      <label for="nom">nom :<input class="input" type="name" id="nom"
-          placeholder="Saisissez votre nom"></label>
+      <div class="position_input">
+        <label for="nom">nom :<input class="input" type="name" id="nom"
+            placeholder="Saisissez votre nom" required></label>
+      </div>
 
-      <label for="email">mail :<input class="input" type="email" id="email"
-          placeholder="Saisissez votre mail"></label>
+      <div class="position_input">
+        <label for="email">mail :<input class="input" type="email" id="email"
+            placeholder="Saisissez votre mail" required></label>
+      </div>
 
       <h3 class="titre_footer">VOTRE JEU PREFERE</h3>
+      <div class="position_input">
       <label for="console">Choisissez une console :
-        <select class="input" name="" id="console">
-          <option>--Choisissez une console--</option>
+        <select id="console">
+          <option selected disabled>--Choisissez une console--</option>
           <option>switch</option>
+          <option>ps5</option>
+          <option>ps4</option>
         </select>
       </label>
+      </div>
 
+      <div class="position_input">
       <label for="jeu">Choisissez un jeu :
-        <select class="input" name="" id="jeu">
-          <option>--Choisissez un jeu--</option>
+        <select id="jeu">
+          <option selected disabled>--Choisissez un jeu--</option>
           <option>Mincraft</option>
+          <option>Fortnite</option>
+          <option>Bob-L'éponge</option>
         </select>
       </label>
+      </div>
+
+      <h3>VOTRE MESSAGE</h3>
+      <textarea placeholder="Saisisez votre message" cols="30" rows="10"></textarea>
+
+      <div>
+        <label class="position_input" for="password">cryptage du message :
+        <input type="password" name="password" id="password" required></label>
+      </div>
+
+      <input class="submit input" type="submit" value="Envoyer votre message">
+
     </form>
   </footer>
 
