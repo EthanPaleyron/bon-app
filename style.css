@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  border: none;
+}
+
+/* COLORS: #2D3142 #4F5D75   #FFFFFF #EF8354 #EAEBEB */
+/* POLICE: font-family: 'Righteous', cursive; && font-family: 'Lato', sans-serif; */
+
+/* :root {} */
+
+body {
+  font-family: 'Lato', sans-serif;
+}
+
+/* HEADER NAV BAR */
+
+
+/* TABLEAU */
+
+
+/* LES PLATS DE LA CARTE */
+
+
+/* BLOG */
+
+
+/* FOOTER */
+
+
+/* MEDIA */
+/* @media screen and (min-width: 680px) {} */
