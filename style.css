@@ -24,7 +24,7 @@ fieldset {
   --noir: #000000;
   --gris_foncer: #2D3142;
   --gris: #4F5D75;
-  --gris_clair: #bfbfbf;
+  --gris_clair: #BFC0C0;
   --blanc: #FFFFFF;
   --blanc_2: #EAEBEB;
   --orange: #EF8354;
@@ -90,7 +90,7 @@ li {
   border-color: var(--gris_clair);
   border-radius: 10px;
   padding: 7px;
-  cursor:all-scroll ;
+  cursor: pointer;
 }
 
 /* TABLEAU */
@@ -108,31 +108,27 @@ table {
 th,
 td {
   margin: 2px 10px;
-  border: solid 1px;
-  border-color: var(--noir);
+  border: 1px solid var(--noir);
   padding: 5px;
 }
 
 thead {
   color: var(--blanc_2);
   background-color: var(--gris);
-  border: solid 1px;
-  border-color: var(--noir);
+  border: 1px solid var(--noir);
 }
 
 
 tbody {
   color: var(--noir);
   background-color: var(--blanc_2);
-  border: solid 1px;
-  border-color: var(--noir);
+  border: 1px solid var(--noir);
 }
 
 tfoot {
   color: var(--blanc_2);
   background-color: var(--gris);
-  border: solid 1px;
-  border-color: var(--noir);
+  border: 1px solid var(--noir);
 }
 
 /* LES PLATS DE LA CARTE */
@@ -238,8 +234,7 @@ form {
   justify-content: center;
   text-align: center;
   width: 250px;
-  border: solid 0.8px;
-  border-color: var(--gris_clair);
+  border: 0.8px solid var(--blanc_2);
 }
 
 .radio {
