@@ -90,7 +90,7 @@ li {
   border-color: var(--gris_clair);
   border-radius: 10px;
   padding: 7px;
-  cursor: pointer;
+  cursor:all-scroll ;
 }
 
 /* TABLEAU */
