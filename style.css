@@ -20,13 +20,6 @@ fieldset {
   border: none;
 }
 
-/* button {
-  border: none;
-} */
-
-/* COLORS:        */
-/* POLICE: font-family: 'Righteous', cursive; && font-family: 'Lato', sans-serif; */
-
 :root {
   --noir: #000000;
   --gris_foncer: #2D3142;
@@ -97,6 +90,7 @@ li {
   border-color: var(--gris_clair);
   border-radius: 10px;
   padding: 7px;
+  cursor: pointer;
 }
 
 /* TABLEAU */
@@ -111,7 +105,8 @@ table {
   border: solid 1px;
 }
 
-th, td {
+th,
+td {
   margin: 2px 10px;
   border: solid 1px;
   border-color: var(--noir);
@@ -199,12 +194,12 @@ h2 {
 .section_blog {
   width: 80%;
   display: grid;
+  grid-gap: 20px 80px;
   justify-content: center;
   align-items: center;
 }
 
 .article_blog {
-  margin: 10px;
   box-shadow: 0px 5px 35px 10px var(--gris_clair);
   text-align: center;
   width: 100%;
@@ -232,12 +227,19 @@ h3 {
   margin: 50px 0 0;
 }
 
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .champs_age {
-  display: inline-block;
+  display: flex;
+  justify-content: center;
+  text-align: center;
   width: 250px;
   border: solid 0.8px;
   border-color: var(--gris_clair);
-  padding: 5px;
 }
 
 .radio {
@@ -249,7 +251,7 @@ legend {
   text-align: start;
 }
 
-input, select {
+.input_select {
   border-radius: 5px;
 }
 
@@ -266,17 +268,19 @@ textarea {
   margin: 15px 0;
   color: var(--blanc_2);
   background-color: var(--gris_foncer);
+  border-radius: 7px;
   padding: 5px;
 }
 
-.submit:hover, .dark_button:hover {
+.submit:hover,
+.dark_button:hover {
   background-color: var(--orange);
 }
 
 /* MEDIA */
 @media screen and (min-width: 680px) {
   h1 {
-    font-size: 50px;
+    font-size: 27px;
   }
 
   .dark_button {
@@ -289,18 +293,17 @@ textarea {
 
   .section_blog {
     grid-template: "a a";
-    grid-gap: 0 20%;
   }
 
   .champs_age {
     width: 500px;
   }
-  
+
   .radio {
     margin: 0 51px;
   }
 
-  input, select {
+  .input_select {
     border-radius: 8px;
     height: 30px;
   }
