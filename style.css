@@ -30,8 +30,13 @@ fieldset {
   --orange: #EF8354;
 }
 
+html {
+  font-size: 62.5%;
+}
+
 body {
   font-family: 'Lato', sans-serif;
+  font-size: 1.5rem;
 }
 
 /* HEADER NAV BAR */
@@ -47,7 +52,7 @@ header {
 h1 {
   margin: 0 auto;
   color: var(--blanc_2);
-  font-size: 15px;
+  font-size: 13px;
 }
 
 h1::before,
@@ -86,7 +91,9 @@ li {
 .dark_button {
   margin: 0 5% 0 0;
   color: var(--blanc);
+  text-transform: uppercase;
   background-color: var(--gris_foncer);
+  width: 8rem;
   border-color: var(--gris_clair);
   border-radius: 10px;
   padding: 7px;
@@ -138,16 +145,18 @@ h2 {
 }
 
 .section_plats {
+  margin-bottom: 25px;
   height: 600px;
+  width: 95vw;
   overflow: scroll;
 }
 
 .article_plats {
-  margin: 10px 5%;
+  margin: 10px auto;
   height: 120px;
   width: 90%;
   background-color: var(--blanc_2);
-  border-radius: 5px;
+  border-radius: 4px 0 0 4px;
   overflow: hidden;
 }
 
@@ -158,12 +167,11 @@ h2 {
 .img_plats {
   height: 100%;
   width: 10em;
-  border-radius: 4px;
   float: left;
 }
 
 .titre_plats {
-  margin: 5px;
+  margin: 5px 0 15px;
 }
 
 .description_plats {
@@ -188,15 +196,18 @@ h2 {
 
 /* BLOG */
 .section_blog {
+  margin-top: 25px;
   width: 80%;
   display: grid;
-  grid-gap: 20px 80px;
+  grid-gap: 55px 80px;
   justify-content: center;
   align-items: center;
 }
 
 .article_blog {
-  box-shadow: 0px 5px 35px 10px var(--gris_clair);
+  background-color: #EAEBEB;
+  padding: 0 0 10px;
+  box-shadow: 0px 5px 35px 0.5px var(--gris_clair);
   text-align: center;
   width: 100%;
 }
@@ -208,11 +219,17 @@ h2 {
 
 /* FOOTER */
 footer {
-  margin-top: 25px;
+  margin-top: 75px;
   background-color: var(--gris);
   color: var(--blanc_2);
   padding: 20px 4%;
   text-align: center;
+}
+
+.contact {
+  color: var(--blanc_2);
+  font-size: 25px;
+  margin-bottom: 25px;
 }
 
 .link_eden_school {
